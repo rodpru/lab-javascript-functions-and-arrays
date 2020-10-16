@@ -27,12 +27,13 @@ console.log(findLongestWord(words));
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 function sumNumbers(array) {
-    sum = 0;
+    let total = 0;
     for(let i = 0; i < array.length; i++) {
-        sum = sum + array[i];
+        total = total + array[i];
     }
-    return sum;
+    return total;
 };
+
 console.log(sumNumbers(numbers));
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
@@ -44,8 +45,12 @@ function averageNumbers(numbersAvg) {
     }
     avgFinal = sumNumbers(numbersAvg) / numbersAvg.length;
     return avgFinal 
-  }
-
+  };
+function sum(array) {
+  if (array.length === 0) {
+    return 0;
+  } 
+}
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
@@ -143,3 +148,5 @@ const matrix = [
   [20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54],
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
+
+
